@@ -1,0 +1,9 @@
+Closed Orange = #ff2e00
+
+Text = #FF5C00
+
+Figured = #FF2E00
+
+Regular Text = #000
+
+The Link = https://briceclain.com/en/

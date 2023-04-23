@@ -1,0 +1,1112 @@
+html  , body { 
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* { 
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Bold";
+    src: url(../Font/Cuprum-Bold.ttf);
+}
+@font-face {
+    font-family:"Italic";
+    src: url(../Font/Cuprum-Italic.ttf);
+}
+@font-face {
+    font-family:"Medium" ;
+    src: url(../Font/Cuprum-Medium.ttf);
+}
+@font-face {
+    font-family: "Regular";
+    src: url(../Font/Cuprum-Regular.ttf);
+}
+@font-face {
+    font-family: "Medium Italic";
+    src: url(../Font/Cuprum-MediumItalic.ttf);
+}
+@font-face {
+    font-family: "Semi Bold";
+    src: url(../Font/Cuprum-SemiBold.ttf);
+}
+a { 
+    text-decoration: none;
+}
+ul , ol { 
+    list-style-type: none;
+}
+.left { 
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+}
+.left:hover { 
+    box-shadow: 0 5px 25px grey;
+    transition: 0.3s cubic-bezier();
+}
+
+.left .row { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    padding: 20px 10px;
+}
+.left .row .col { 
+    flex-basis: 33%;
+    position: relative;
+}
+.left .row .col .myImg { 
+    position: relative;
+}
+.left .row .col .myImg img { 
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+
+}
+.left .row .col .flex { 
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    padding: 8px 0;
+}
+.left .row .col .flex .col-flex { 
+    position: relative;
+}
+.left .row .col .flex .col-flex .checked { 
+    color: #FF2E00;
+}
+.left .row .col .flex .col-flex h2 { 
+    font-family: "Semi Bold";
+    font-weight: 100;
+    font-size: 26px;
+    letter-spacing: 1.3px;
+    text-align: start;
+    color: #000;
+    cursor: pointer;
+    padding: 7px;
+}
+.left .row .col .flex .col-flex h2:hover { 
+    transform: translate(15% ,0);
+    transition: 0.3s ease-in;
+    color: #FF2E00;
+    background-color: #f0f0f0;
+    border-radius: 50px;
+}
+.left .row .col .mysignature { 
+    text-align: center;
+    padding: 5px 0;
+}
+.left .row .col .mysignature h2 { 
+    font-size: 24px;
+    color: #000;
+    font-family: "Bold";
+    opacity: .7;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+.left .row .col .icon-flex { 
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding: 8px 0;
+}
+.introducing { 
+    position: relative;
+    left: 25%;
+    height: 100vh;
+    width: 75%;
+    top: 50px;
+}
+
+.introducing .work-with-me-fixed { 
+    padding: 7px 40px;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    background-color: #FF2E00;
+    color: #fff;
+    border-radius: 30px;
+    text-align: start;
+    cursor: pointer;
+    z-index: 33333;
+    box-shadow: 5px 5px 40px 0 rgba(255,0,0,.3);
+}
+.introducing .work-with-me-fixed:hover { 
+    transform: scale(1.2);
+    transition: 0.3s ease-out;
+}
+.introducing .work-with-me-fixed h3 { 
+    font-size: 30px;
+    font-family: "Medium";
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #fff;
+    text-align: start;
+    position: relative;
+    right: 10px;
+}
+.introducing .work-with-me-fixed .first-h3-work { 
+    position: relative;
+    top: 5px;
+}
+.introducing .work-with-me-fixed .first-h3-work::before { 
+    content: " ";
+    position: absolute;
+    width: 140px;
+    height: 2px;
+    background-color: #fff;
+    top: 37px;
+    left: -30px;
+}
+.introducing .work-with-me-fixed .second-h3-work { 
+    position: relative;
+    bottom: 5px;
+}
+.introducing .work-with-me-fixed .second-h3-work::before { 
+    content:  " ";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(38deg);
+    right: -19px;
+    top: -10px;
+}
+.introducing .work-with-me-fixed .second-h3-work::after { 
+    content:  " ";
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-38deg);
+    right: -19px;
+    top: -1px;
+}
+.introducing .honors { 
+    position: fixed;
+    right: -3%;
+    top: 50%;
+    transform: rotate(270deg);
+    background-color: rgb(155, 212, 215);
+    padding: 20px 75px;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 333333;
+}
+.introducing .honors a h3 { 
+    color: #fff;
+    font-size: 18px;
+    font-family: "Bold";
+    font-weight: 1000;
+    letter-spacing: 0.3px;
+    position: relative;
+    right: 50px;
+}
+.introducing .honors a h3::after { 
+    content: " W. ";
+    font-family: "Bold";
+    font-weight: 1000;
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+    left: 130px;
+    transform: rotate(90deg);
+    top: -3px;
+}
+.introducing .title { 
+    width: 55%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    column-gap: 20px;
+    padding: 30px;
+    border: 2px solid gray;
+    border-radius: 50px;
+    flex-direction: column;
+    margin: 0 150px;
+    position: relative;
+    top: 50px;
+    background-color: #fff;
+}
+.introducing .title .orange { 
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -40px;
+    top: -35px;
+    background-color: #ff7a00;
+    border-radius: 15px;
+    z-index: -11111;
+}
+.line-1 { 
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+}
+.line-2 { 
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+}
+.line-3 { 
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    padding: 10px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.introducing .title p { 
+    font-size: 30px;
+    color: gray;
+    position: relative;
+    font-family: "Medium";
+}
+.line-1 h2{ 
+    color: #000;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 1000;
+    position: relative;
+    left: 10px;
+    
+}
+.line-1 h2::before { 
+    content:  " < ";
+    font-family: "Regular";
+    color: grey;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.line-1 h2::after { 
+    content:  " > ";
+    font-family: "Regular";
+    color: gray;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.line-2 h2{ 
+    color: #000;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+    left: 10px;
+}
+.line-2 h2::before { 
+    content:  " < ";
+    font-family: "Regular";
+    color: grey;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.line-2 h2::after { 
+    content:  " > ";
+    font-family: "Regular";
+    color: gray;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.line-3 h2{ 
+    color: #000;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 400;
+    position: relative;
+    left: 10px;
+}
+.line-3 h2::before { 
+    content:  " < ";
+    font-family: "Regular";
+    color: grey;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.line-3 h2::after { 
+    content:  " > ";
+    font-family: "Regular";
+    color: gray;
+    font-size: 40px;
+    font-weight: 100;
+    opacity: .7;
+}
+.orangeSign { 
+    color: #FF5C00;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 400;
+}
+.introducing .title .line-2 .little-img { 
+    position: relative;
+}
+.introducing .title .line-2 .little-img img { 
+    width: 25px;
+}
+.introducing .design-title { 
+    position: relative;
+    width: max-content;
+    top: 65px;
+    left: 200px;
+}
+.introducing .design-title h1 { 
+    color: #000;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 1000;
+}
+.introducing .casual-logos { 
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    position: relative;
+}
+.introducing .casual-logos .svg-images { 
+    opacity: .7;
+}
+.introducing .casual-logos .svg-images img { 
+    width: 35px;
+    z-index: -2;
+}
+#first-img { 
+   position: absolute;
+   left: 35%;
+   top: 80px;
+   animation: leftRight 2s ease-in infinite;
+}
+#second-img { 
+    position: absolute;
+    left: 65%;
+    top: 80px;
+    animation: leftRight 2s ease-in infinite;
+}
+#third-img { 
+    position: absolute;
+    left: 75%;
+    top: -20px;
+    animation: leftRight 2s ease-in infinite;
+}
+#fourth-img { 
+    position: absolute;
+    left: 65%;
+    top: -300px;
+    animation: leftRight 2s ease-in infinite;
+}
+#fifth-img { 
+    position: absolute;
+    left: 45%;
+    top: -300px;
+    animation: leftRight 2s ease-in infinite;
+}
+#sixth-img { 
+    position: absolute;
+    left: 25%;
+    top: -300px;
+    animation: leftRight 2s ease-in infinite;
+}
+#seventh-img { 
+    position: absolute;
+    left: 7%;
+    top: -120px;
+    animation: leftRight 2s ease-in infinite;
+}
+#eigth-img { 
+    position: absolute;
+    left: 10%;
+    top: 75px;
+    animation: leftRight 2s ease-in infinite;
+}
+.introducing .read-more { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    left: 33%;
+    top: 175px;
+}
+.introducing .read-more h3 { 
+    font-size: 22px;
+    color: #000;
+    font-family: "Medium";
+    font-weight: 1000;
+    cursor: pointer;
+}
+.introducing .read-more .readmore-img { 
+   position: relative;
+   width: max-content;
+   padding: 5px 10px;
+   border-radius: 100%;
+   background-color: #FF5C00;
+   display: flex;
+   justify-content: space-between;
+   left: 110px;
+   bottom: 30px;
+   animation: upDown 1s ease-in infinite;
+   cursor: pointer;
+}
+.introducing .read-more .readmore-img img { 
+    filter: brightness(0) invert(1);
+    width: 15px;
+}
+.idea { 
+    position: relative;
+    left: 25%;
+    width: 75%;
+    height: 100%;
+}
+.idea .container { 
+    position: relative;
+}
+.idea .title-idea { 
+    width: 375px;
+    padding: 10px 30px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 5px 25px rgb(201, 201, 201);
+}
+.idea .orangeSquare { 
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: -40px;
+    top: -35px;
+    background-color: #FF5C00;
+    border-radius: 15px;
+    z-index: -11111;
+}
+.idea .title-idea h3 { 
+    color: grey;
+    font-size: 30px;
+    font-family: "Medium";
+    font-weight: 300;
+}
+.idea .title-idea .black { 
+    color: #000;
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 1000;
+    padding: 0 0 0 20px;
+}
+.idea .title-idea .thenewOne { 
+    padding: 0 0 0 20px;
+}
+.idea .row { 
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+    top: 30px;
+    padding: 20px 0;
+}
+.idea .row .col  { 
+    position: relative;
+}
+.idea .row .col-content { 
+    background-color: #f4f4f4;
+    border-radius: 50px;
+    padding: 20px;
+    overflow: hidden !important;
+}
+.idea .row .col img { 
+    width: 50px;
+    border-radius: 100%;
+    height: 50px;
+}
+.idea .row .col h3 { 
+    font-size: 22px;
+    font-family: "Bold";
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    padding: 15px 0;
+}
+.idea .row .col .orange-order { 
+    font-size: 22px;
+    font-family: "Bold";
+    color: #ff7a00;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+.idea .now { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    left: 40%;
+    padding: 30px 0;
+}
+.idea .now .inShape .theImgShape { 
+    position: relative;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 100%;
+    background-color: #FF5C00;
+    left: 3px;
+    cursor: pointer;
+    animation: downUp 4s ease-out infinite;
+}
+.idea .now .inShape img { 
+    filter:brightness(0) invert(1);
+    width: 15px;
+}
+.idea .now h3 { 
+    font-size: 22px;
+    color: #000;
+    font-family: "Regular";
+    font-weight: 100;
+    cursor: pointer;
+}
+.idea .flexed { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+.idea .flexed .col-flexed { 
+    flex-basis: 50%;
+    position: relative;
+}
+.idea .flexed .col-flexed .info-title { 
+    display: flex;
+    align-items: center;
+    column-gap: 1px;
+}
+.idea .flexed .col-flexed .info-title .info-flex { 
+    position: relative;
+    padding: 10px;
+} 
+.idea .flexed .col-flexed .info-title .info-flex img { 
+    width: 30px;
+}
+.idea .flexed .col-flexed .info-title .info-flex h3 { 
+    font-size: 25px;
+    font-family: "Bold";
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+.idea .flexed .col-flexed .content-free { 
+    width: 100%;
+    position: relative;
+    padding: 10px 0;
+}
+.idea .flexed .col-flexed .content-free p { 
+    font-size: 20px;
+    font-family: "Regular";
+    color: #000;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.idea .solution-site { 
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+.idea .solution-site .title-solution { 
+    position: relative;
+    right: 30px;
+}
+.idea .solution-site .title-solution h1 { 
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+.idea .solution-site .solution-row { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0;
+}
+.idea .solution-site .solution-row .solution-row-col { 
+    flex-basis: 70%;
+    position: relative;
+}
+.idea .solution-site .solution-row .solution-row-col .the-webpage-image { 
+    width: 600px;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column { 
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 15px 0;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column .the-img-inside-solution img { 
+    width: 30px;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column .the-title-inside-solution { 
+    text-align: start;
+    width: max-content;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column .the-title-inside-solution h2 { 
+    font-size: 30px;
+    font-family: "Bold";
+    color: #000;
+    letter-spacing: 0.3px;
+    font-weight: 1000;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column .the-content-inside-solution { 
+    text-align: start;
+    align-items: start;
+    position: relative;
+    width: max-content;
+}
+.idea .solution-site .solution-row .solution-row-col .solution-row-col-direction-column .the-content-inside-solution p { 
+    font-size: 23px;
+    font-family: "Regular";
+    color: #000;
+    letter-spacing: 0.3px;
+    font-weight: 100;
+    width: 300px;
+}
+.idea .price { 
+   position: relative;
+   text-align: center;
+}
+.idea .price .price-row { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+.idea .price .price-row .price-row-col { 
+    width: 100%;
+    position: relative;
+}
+.idea .price .price-row .price-row-col-30::before {
+    content:  " ";
+    position: absolute;
+    width: 75px;
+    height: 2px;
+    background-color: #FF5C00;
+    top: 50%;
+    right: 0;
+}
+.idea .price .price-row .price-row-col-30 { 
+    flex-basis: 30%;
+    position: relative;
+}
+.idea .price .price-row .price-row-col-70 { 
+    flex-basis: 70%;
+    position: relative;
+}
+.idea .price .price-row .price-row-col .price-row-col-direction { 
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    row-gap: 10px;
+    padding: 5px 0;
+    flex-direction: column;
+}
+.idea .price .price-row .price-row-col .price-row-col-direction .price-row-col-direction-column { 
+    position: relative;
+}
+.idea .price .price-row .price-row-col .price-row-col-direction .price-row-col-direction-column img { 
+    width: 20px;
+    position: relative;
+    left: 10px;
+}
+.idea .price .price-row .price-row-col .price-row-col-direction .price-row-col-direction-column h2 { 
+    font-size: 30px;
+    font-family: "Bold";
+    font-weight: 100;
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 5px 0;
+    width: 200px;
+}
+.idea .price .price-row .price-row-col h4 { 
+    font-size: 28px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #000;
+    letter-spacing: 0.3px;
+    padding: 3px 0;
+}
+.idea .achievments { 
+    text-align: start;
+    position: relative;
+}
+.idea .achievments .title-achiv { 
+    position: relative;
+    padding: 30px 0 0 20px;
+}
+.idea .achievments .title-achiv h1 { 
+    font-size: 45px;
+    font-family: "Medium";
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.2px;
+}
+.idea .achievments .title-achiv img { 
+    width: 35px;
+    cursor: pointer;
+}
+.idea .achievments .projects-flex { 
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 20px;
+    padding: 40px 0;
+}
+.idea .achievments .projects-flex .projects-col { 
+    flex-basis: 50%;
+    position: relative;
+}
+.idea .achievments .projects-flex .projects-col img { 
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute { 
+    position: relative;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .f-image{ 
+    animation: displaySecond 3.5s ease-out infinite;
+    opacity: 1;
+    visibility: visible;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .s-image { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    animation: displayFirst 3.5s ease-in infinite
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .th-image { 
+    animation: displaySecond 3.5s ease-out infinite;
+    opacity: 1;
+    visibility: visible;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .fth-image { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    animation: displayFirst 3.5s ease-in infinite;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .info-about-project { 
+    position: absolute;
+    top: 50px;
+    z-index: 78912378912378923789123 !important;
+    left: 50px;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .info-about-project h2 { 
+    font-size: 35px;
+    font-family: "Regular";
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0.2px;
+    z-index: 333333333333 !important;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .myAward { 
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    z-index: 333333333333 !important;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .myAward img { 
+    width: 20px;
+    position: relative;
+    left: 10px;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .myAward h4 { 
+    font-size: 20px;
+    font-family: "Medium";
+    color: #000;
+    font-weight: 100;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .excat-thing { 
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    z-index: 333333 !important;
+    cursor: pointer;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .excat-thing img { 
+    width: 20px;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .excat-thing h4 { 
+    font-size: 18px;
+    font-family: "Medium";
+    font-weight: 100;
+    color: #000;
+}
+.idea .achievments .projects-flex .projects-col .img-absolute .excat-thing h4:hover { 
+    color: #ff7a00;
+    text-decoration: underline;
+    transition: 0.3s ease-in;
+    font-size: 20px;
+}
+.idea .achievments .more-about-me { 
+    text-align: start;
+    padding: 30px 0;
+    position: relative;
+}
+.idea .achievments .more-about-me h3 { 
+    font-size: 24px;
+    font-family: "Regular";
+    color: #000;
+    font-weight: 400;
+}
+.idea .achievments .more-about-me .mySign { 
+    font-size: 24px;
+    font-family: "Regular";
+    font-weight: 400;
+    color: #ff7a00;
+}
+.idea .me { 
+    padding: 30px 0;
+    text-align: start;
+    width: 100%;
+}
+.idea .me .myName { 
+    padding: 10px 0;
+    position: relative;
+}
+.idea .me .myName h1 { 
+    font-size: 55px;
+    font-family: "Bold";
+    color: #000;
+    font-weight: 1000;
+    letter-spacing: 0.3px;
+    padding: 10px 0;
+}
+.idea .me .myName h3 { 
+    font-size: 25px;
+    font-family: "Semi Bold";
+    font-weight: 100;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+.idea .me .myName h2 { 
+    padding: 20px 0;
+    font-size: 40px;
+    font-family: "Regular";
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    color: #000;
+}
+.idea .me .myName p { 
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: "Regular";
+    font-weight: 100;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+.idea .me .myName .sponsor { 
+    color: #000;
+    text-decoration: underline;
+}
+.idea .me .myName .sponsor:hover { 
+    color: #ff7a00;
+    transition: 0.3s ease-in;
+}
+.idea .me .myName .sponsor a { 
+    color: #000;
+}
+.idea .me .myName .sponsor a:hover { 
+    color: #ff7a00;
+    transition: 0.3s ease-in;
+}
+.idea .knowledge { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+.idea .knowledge .know-col { 
+    flex-basis: 50%;
+    position: relative;
+}
+.idea .knowledge .know-col h2 { 
+    font-size: 30px;
+    font-family: "Bold";
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+.idea .knowledge .know-col .icon-flex { 
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0;
+}
+.idea .bottom { 
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+}
+.idea .bottom h2 { 
+    font-size: 23px;
+    font-family: "Regular";
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    color: #000;
+}
+
+@keyframes displayFirst {
+   from { 
+    opacity: 0;
+    visibility: hidden;
+   }
+   to { 
+    opacity: 1;
+    visibility: visible;
+    display: block;
+   }
+}
+@keyframes displaySecond {
+    0% { 
+        opacity: 1;
+        visibility: visible;
+    }
+    100% { 
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes downUp {
+    0% { 
+        transform: translate(0% , 0%);
+    }
+    25% { 
+        transform: translate(0% , 7%);
+    }
+    50% { 
+        transform: translate(0% , -7%);
+    }
+    75% { 
+        transform: translate(0% , 15%);
+    }
+    100% { 
+        transform: translate(0% , -15%);
+    }
+}
+
+@keyframes upDown {
+    0% { 
+        transform: translate(0% , 0%);
+    }
+    25% { 
+        transform: translate(0% , 15%);
+    }
+    50% { 
+        transform: translate(0% , -15%);
+    }
+    75% { 
+        transform: translate(0 , 25%);
+    }
+    100% { 
+        transform: translate(0 , -25%);
+    }
+}
+
+@keyframes leftRight {
+   0% { 
+    transform: translate(0% , 0%);
+   }  
+    25% { 
+    transform: translate(-3% , -1%);
+  }
+  50% { 
+    transform: translate(3% , 1%);
+  }
+  75% { 
+    transform: translate(-2% , -1%);
+  }
+  100% { 
+    transform: translate(2% , 1%);
+  }
+}
+@media only screen and (max-width:650px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:651px) and (max-width:789px) { 
+    html , body {
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:790px) and (max-width:1024px) { 
+    html  ,body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:1025px) and (max-width:1240px) { 
+    html  ,body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+}
+@media only screen and (min-width:1241px) { 
+    html  ,body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    
+}

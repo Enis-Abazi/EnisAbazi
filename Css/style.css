@@ -137,7 +137,7 @@ ul , ol {
     border-radius: 30px;
     text-align: start;
     cursor: pointer;
-    z-index: 33333;
+    z-index: 192837128937192837192837192837129837128937123;
     box-shadow: 5px 5px 40px 0 rgba(255,0,0,.3);
 }
 .introducing .work-with-me-fixed:hover { 
@@ -1069,7 +1069,7 @@ ul , ol {
     transform: translate(2% , 1%);
   }
 }
-@media only screen and (max-width:650px) { 
+@media only screen and (max-width:600px) { 
     html , body { 
         overflow-x: hidden;
     }
@@ -1286,13 +1286,217 @@ ul , ol {
     }
 
 }   
-@media only screen and (min-width:651px) and (max-width:789px) { 
+@media only screen and (min-width:601px) and (max-width:789px) { 
     html , body {
         overflow-x: hidden;
     }
     * { 
         padding: 0;
         margin: 0;
+    }
+     .left { 
+        display: none;
+    }
+    .introducing .work-with-me-fixed { 
+        display: block;
+        top: 85%;
+        padding: 5px 25px;
+        overflow: hidden;
+    }
+    .introducing .container { 
+        padding: 20px;
+    }
+    .mobile-version-header-on-mid { 
+        display: block;
+        position: fixed;
+        right: 5%;
+        top: 50%;
+        z-index: 333333333 !important;
+        background-color: #fff;
+        box-shadow: 0 5px 25px #f0f0f0;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+
+    }
+    .mobile-version-header-on-mid .vertical-row { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        padding: 3px;
+    }
+    .mobile-version-header-on-mid .vertical-row .vertical-col { 
+        position: relative;
+    }
+     .vert-img { 
+        width: 25px;
+    }
+    .honors { 
+        display: none;
+    }
+    .introducing { 
+        left: 0;
+        width: 100%;
+        height: 500px;
+    }
+    .introducing .title .orange { 
+        left: -20px;
+    }
+    .myImage-inMobile { 
+     display: none;
+    }
+   
+    #sixth-img { 
+        left: 9%;
+        top: -380px;
+    }
+    #fourth-img {
+       left: 83%;
+       top: -340px;
+    }
+    #seventh-img { 
+        left: 11%;
+        top: -250px;
+    }
+    #fifth-img { 
+        left: 78%;
+        top: -245px;
+    }
+    .introducing .title { 
+        margin: 0 auto;
+        width: max-content;
+        padding: 10px 25px;
+        border-radius: 25px;
+    }
+    .introducing .title p { 
+        font-size: 20px;
+        left: -10px;
+    }
+    .introducing .title h2 { 
+        font-size: 23px;
+        left: -20px;
+    }
+    .line-1 h2::before , .line-2 h2::before , .line-3 h2::before { 
+        font-size: 25px;
+    }
+    .orangeSign { 
+        font-size: 23px;
+    }
+    .line-1 h2::after , .line-2 h2::after , .line-3 h2::after {
+        font-size: 25px;
+    }
+    .idea { 
+        left: 0;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .introducing .design-title { 
+        width: auto;
+        left: 0;
+    }
+    .introducing .design-title h1 { 
+        font-size: 22px;
+        text-align: center;
+    }
+    .idea .achievments .title-achiv h1 { 
+        font-size: 30px;
+    }
+    .introducing .read-more { 
+        left: 0;
+        justify-content: center;
+    }
+    #third-img { 
+        left: 85%;
+        top: 90px;
+    }
+    #second-img { 
+        top: 70px;
+    }
+    .idea .container { 
+        padding: 20px;
+    }
+    .idea .title-idea { 
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+    .idea .title-idea .black { 
+        font-size: 25px;
+    }
+    .idea .title-idea h3 { 
+        font-size: 22px;
+    }
+    .idea .orangeSquare {
+        left: -20px;
+    }
+    .idea .row { 
+        padding: 15px 0;
+    }
+    .idea .now { 
+        justify-content: center;
+        left: 0;
+    }
+    .idea .flexed { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .solution-site .solution-row { 
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    .idea .price .price-row .price-row-col-30::before { 
+        top: 100%;
+        right: 150px;
+    }
+    .idea .price .price-row { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .price .price-row .price-row-col .price-row-col-direction { 
+        justify-content: center;
+        align-items: center;
+    }
+    .idea .price .price-row .price-row-col .price-row-col-direction .price-row-col-direction-column img { 
+        left: 0;
+    }
+    .idea .achievments .projects-flex { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .info-about-project { 
+        top: 40px;
+        left: 30px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .info-about-project h2 { 
+        font-size: 25px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .myAward { 
+        top: 40px;
+        right: 30px;
+    }
+    .idea .me .myName h1 { 
+        font-size: 35px;
+    }
+    .idea .me .myName h3 {
+         font-size: 22px;
+    }
+    .idea .me .myName h2 { 
+        font-size: 30px;
+    }
+    .idea .knowledge { 
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: start;
+        align-items: start;
+    }
+    .idea .knowledge .know-col h2 { 
+        font-size: 24px;
+    }
+    .idea .knowledge .know-col .icon-flex img { 
+        width: 17px;
     }
 }
 @media only screen and (min-width:790px) and (max-width:1024px) { 
@@ -1303,6 +1507,210 @@ ul , ol {
         padding: 0;
         margin: 0;
     }
+      .left { 
+        display: none;
+    }
+    .introducing .work-with-me-fixed { 
+        display: block;
+        top: 85%;
+        padding: 5px 25px;
+        overflow: hidden;
+    }
+    .introducing .container { 
+        padding: 20px;
+    }
+    .mobile-version-header-on-mid { 
+        display: block;
+        position: fixed;
+        right: 5%;
+        top: 50%;
+        z-index: 333333333 !important;
+        background-color: #fff;
+        box-shadow: 0 5px 25px #f0f0f0;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid #fff;
+        outline: none;
+        cursor: pointer;
+
+    }
+    .mobile-version-header-on-mid .vertical-row { 
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: center;
+        padding: 3px;
+    }
+    .mobile-version-header-on-mid .vertical-row .vertical-col { 
+        position: relative;
+    }
+     .vert-img { 
+        width: 25px;
+    }
+    .honors { 
+        display: none;
+    }
+    .introducing { 
+        left: 0;
+        width: 100%;
+        height: 500px;
+    }
+    .introducing .title .orange { 
+        left: -20px;
+    }
+    .myImage-inMobile { 
+     display: none;
+    }
+   
+    #sixth-img { 
+        left: 9%;
+        top: -380px;
+    }
+    #fourth-img {
+       left: 83%;
+       top: -340px;
+    }
+    #seventh-img { 
+        left: 11%;
+        top: -250px;
+    }
+    #fifth-img { 
+        left: 78%;
+        top: -245px;
+    }
+    .introducing .title { 
+        margin: 0 auto;
+        width: max-content;
+        padding: 10px 25px;
+        border-radius: 25px;
+    }
+    .introducing .title p { 
+        font-size: 20px;
+        left: -10px;
+    }
+    .introducing .title h2 { 
+        font-size: 23px;
+        left: -20px;
+    }
+    .line-1 h2::before , .line-2 h2::before , .line-3 h2::before { 
+        font-size: 25px;
+    }
+    .orangeSign { 
+        font-size: 23px;
+    }
+    .line-1 h2::after , .line-2 h2::after , .line-3 h2::after {
+        font-size: 25px;
+    }
+    .idea { 
+        left: 0;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    .introducing .design-title { 
+        width: auto;
+        left: 0;
+    }
+    .introducing .design-title h1 { 
+        font-size: 22px;
+        text-align: center;
+    }
+    .idea .achievments .title-achiv h1 { 
+        font-size: 30px;
+    }
+    .introducing .read-more { 
+        left: 0;
+        justify-content: center;
+    }
+    #third-img { 
+        left: 85%;
+        top: 90px;
+    }
+    #second-img { 
+        top: 70px;
+    }
+    .idea .container { 
+        padding: 20px;
+    }
+    .idea .title-idea { 
+        padding: 10px 20px;
+        margin: 0 auto;
+    }
+    .idea .title-idea .black { 
+        font-size: 25px;
+    }
+    .idea .title-idea h3 { 
+        font-size: 22px;
+    }
+    .idea .orangeSquare {
+        left: -20px;
+    }
+    .idea .row { 
+        padding: 15px 0;
+    }
+    .idea .now { 
+        justify-content: center;
+        left: 0;
+    }
+    .idea .flexed { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .solution-site .solution-row { 
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+    .idea .price .price-row .price-row-col-30::before { 
+        top: 100%;
+        right: 150px;
+    }
+    .idea .price .price-row { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .price .price-row .price-row-col .price-row-col-direction { 
+        justify-content: center;
+        align-items: center;
+    }
+    .idea .price .price-row .price-row-col .price-row-col-direction .price-row-col-direction-column img { 
+        left: 0;
+    }
+    .idea .achievments .projects-flex { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .info-about-project { 
+        top: 40px;
+        left: 30px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .info-about-project h2 { 
+        font-size: 25px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .myAward { 
+        top: 40px;
+        right: 30px;
+    }
+    .idea .me .myName h1 { 
+        font-size: 35px;
+    }
+    .idea .me .myName h3 {
+         font-size: 22px;
+    }
+    .idea .me .myName h2 { 
+        font-size: 30px;
+    }
+    .idea .knowledge { 
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: start;
+        align-items: start;
+    }
+    .idea .knowledge .know-col h2 { 
+        font-size: 24px;
+    }
+    .idea .knowledge .know-col .icon-flex img { 
+        width: 17px;
+    }
 }
 @media only screen and (min-width:1025px) and (max-width:1240px) { 
     html  ,body { 
@@ -1312,6 +1720,37 @@ ul , ol {
         padding: 0;
         margin: 0;
     }
+    .introducing { 
+        height: 100%;
+        margin: 0 0 300px 0;
+    }
+    .introducing .container { 
+        padding: 50px 0;
+    }
+    .introducing .title { 
+        width: 65%;
+    }
+    #third-img { 
+        left: 85%;
+    }
+
+    .idea .solution-site .solution-row .solution-row-col .the-webpage-image { 
+        width: 300px;
+    }
+    .idea .price .price-row .price-row-col-30::before { 
+        width: 30px;
+        right: -30px;
+    }
+    .idea .price .price-row .price-row-col-30 { 
+        flex-basis: 20%;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .info-about-project { 
+        top: 40px;
+    }
+    .idea .achievments .projects-flex .projects-col .img-absolute .myAward { 
+        top: 40px;
+    }
+
 }
 @media only screen and (min-width:1241px) { 
     html  ,body { 
@@ -1320,6 +1759,15 @@ ul , ol {
     * { 
         padding: 0;
         margin: 0;
+    }
+    .idea { 
+        margin: 200px 0 0 0;
+    }
+    .introducing { 
+        height: 100%;
+    }
+    .introducing .container { 
+        padding: 50px 0;
     }
 
 }
